@@ -1,4 +1,4 @@
-# Valero-Arm
+# Valero-Arm Tendon Route Optimization
 Please refer to https://github.com/nkreid/ValeroArm for the tendon route optimization problem statement as well as Chapter 7 of Dr. Francisco Valero-Cuevas' BME 504 textbook: Fundamentals of Neuromechanics.
 
 # Initial Task and Initial Hurdles
@@ -11,3 +11,6 @@ Along with the intial parameters, limb mechanics, limb kinematics, and the creat
 Instead of providing a while loop, I've opted in for the perpendicular line test. Such a test, takes draws a perpendicular line (the shortest distance) from the center of the circle to the edge of each polytope boundary. Then, the each line from the center the edge is evaluated, if the line crosses the polytope edge, due to the point of intersection being outside the polytope, that perpendicular line and intersection point is thrown out.
 
 The line with the shortest distance from the center to the edge of the polytope that is still within the polytope is the radius of the largest circle possible within the polytope.
+
+# Where To Go From Here
+After finding out the optimal feasible force sets, we can then extrapolate the feasible routes and confirm that such tendon routing is consistent with the G2P Paper. Then, the tendon routing in the physical arm can be applied into the new, simplified ValeroArm - in order to provide a real-world model for the DARPA L2M simulation.
